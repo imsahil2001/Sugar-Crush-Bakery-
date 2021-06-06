@@ -1,5 +1,5 @@
 # Sugar-Crush
-  A single page site which depcits about bakery
+  A single page site which depicts about bakery
  
 ## This video shows about my website
 

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- locomotive scroll -->
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body id="style-1">
+    <div class="loader_bg">   
+        <div id="round1">
+          <span></span>
+          <span></span>
+        </div>
+     </div>
+
+
+    <div class="popupcard">
+      <video id="popupcard-video" width="800" height="500" controls>
+        <source src="./images/popup.mp4" type="video/mp4" />
+      </video>
+      <a href="#" class="icon" onclick="poppupDisplay()"
+        ><img src="./images/cross.svg" alt=""
+      /></a>
+    </div>
+
+    
+
+
+    <section class="body">
+      
+        <header class="header" >
+          <h1 class="header-h1-small">Sugar Crush</h1>
+          <ul class="header-ul">
+            <li class="header-li"><a href="">Cupcakes</a></li>
+            <li class="header-li"><a href="">Bread</a></li>
+            <li class="header-li"><a href="">Book</a></li>
+          </ul>
+          <h1 class="header-h1">
+            Let us keep your <br />
+            Cookie jars filled
+          </h1>
+          <img src="./images/Bread-Basket.svg" alt="" class="header-basketImg" />
+
+          <img src="./images/Main-page-1.svg" alt="" class="header-ImgBlob">
+
+          <img src="./images/Main-page-blob.svg" alt="" class="header-Blob">
+
+
+          <svg
+            class="header-svg-1"
+            width="253"
+            height="225"
+            viewBox="0 0 253 225"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Blob-bg"
+              d="M129.586 4.42154C154.959 3.00905 180.904 4.67734 201.095 16.8384C221.141 28.9122 232.426 49.7767 240.892 71.3072C248.737 91.2589 251.427 112.419 246.566 132.775C241.907 152.285 229.279 169.322 213.731 184.586C198.429 199.608 180.835 212.382 159.704 217.934C138.471 223.513 116.083 220.632 93.646 216.024C92.2922 215.746 90.9376 215.47 89.5836 215.194C78.8149 213.002 68.0837 210.818 58.0676 207.54C46.83 203.861 36.832 198.905 29.0763 191.33C13.2257 175.85 9.38186 153.525 6.25317 130.957C3.16726 108.697 1.79406 86.6183 12.0029 67.7023C22.1864 48.8331 42.4086 36.3052 63.6807 24.8007C84.1983 13.7044 106.103 5.72879 129.586 4.42154Z"
+              stroke="#5D3F27"
+              stroke-width="4"
+            />
+          </svg>
+  
+          <svg
+            class="header-svg-2"
+            width="200"
+            height="200"
+            viewBox="0 0 253 225"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="Blob-bg"
+              d="M129.586 4.42154C154.959 3.00905 180.904 4.67734 201.095 16.8384C221.141 28.9122 232.426 49.7767 240.892 71.3072C248.737 91.2589 251.427 112.419 246.566 132.775C241.907 152.285 229.279 169.322 213.731 184.586C198.429 199.608 180.835 212.382 159.704 217.934C138.471 223.513 116.083 220.632 93.646 216.024C92.2922 215.746 90.9376 215.47 89.5836 215.194C78.8149 213.002 68.0837 210.818 58.0676 207.54C46.83 203.861 36.832 198.905 29.0763 191.33C13.2257 175.85 9.38186 153.525 6.25317 130.957C3.16726 108.697 1.79406 86.6183 12.0029 67.7023C22.1864 48.8331 42.4086 36.3052 63.6807 24.8007C84.1983 13.7044 106.103 5.72879 129.586 4.42154Z"
+              stroke="#5D3F27"
+              stroke-width="4"
+            />
+          </svg>
+  
+          <div class="header-playBtn" onclick="poppupDisplay()">
+            <svg
+              class="header-playBtn-triangle"
+              width="18"
+              height="23"
+              viewBox="0 0 38 43"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="playbtn-triangle"
+                d="M35.8671 22.813L3.69883 41.5733C2.70136 42.155 1.44821 41.4388 1.44317 40.2841L1.28043 3.04536C1.27538 1.89067 2.52222 1.16353 3.52473 1.7365L35.8558 20.2149C36.8583 20.7879 36.8646 22.2313 35.8671 22.813Z"
+                fill="#EECDA3"
+                stroke="black"
+              />
+            </svg>
+          </div>
+        </header>
+
+        <section class="breadQuality" >
+          <h1 class="breadQuality-h1">
+            There is not a thing that is more positive than <strong>BREAD</strong>
+          </h1>
+  
+          <div class="breadQuality-capsule">
+            <img src="./images/bread.jpg" alt="" class="breadQuality-capsule-img" />
+          </div>
+  
+          <div  class="breadQuality-blob-1 breadQuality-blob"><p class="breadQuality-blob-p">Soft like cotton</p></div>
+          <div  class="breadQuality-blob-2 breadQuality-blob"><p class="breadQuality-blob-p">100% fresh ingredients</p></div>
+          <div  class="breadQuality-blob-3 breadQuality-blob"><p class="breadQuality-blob-p">Crusty hot and Yummy</p></div>
+          <div  class="breadQuality-blob-4 breadQuality-blob"><p class="breadQuality-blob-p">Glossy and melting in mouth</p></div>
+  
+          <div class="breadQuality-icon">
+            <img src="./images/cupcake.png" alt="" class="breadQuality-icon-img-1">
+            <img src="./images/cupcake.png" alt="" class="breadQuality-icon-img-2">
+            <img src="./images/cupcake.png" alt="" class="breadQuality-icon-img-3">
+            <img src="./images/cupcake.png" alt="" class="breadQuality-icon-img-4">
+            <img src="./images/cupcake.png" alt="" class="breadQuality-icon-img-5">
+          </div>
+        </section>
+  
+        <section class="cupcake">
+          <div style="height: 150px; overflow: hidden; position: absolute; top: -100px; width: 100%;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C322.45,176.94 349.20,-49.99 500.00,49.99 L500.00,150.00 L-33.07,175.95 Z" style="stroke: none; fill: #EECDA3;"></path></svg></div>
+          <h1 class="cupcake-h1">Our Special <br><span>Cupcakes</span></h1>
+  
+          <div class="cupcake-content-1 cupcake-content breadQuality-blob">
+            <img src="./images/strawberry cupcake.png" alt="" class="cupcake-content-img">
+              <h2 class="cupcake-content-h2">Strawberry Choco Cupcake</h2>
+              <p class="cupcake-content-p">(this is a cupcake with strawberry icicng and dark chocolate bread)</p>
+          </div>
+          <div class="cupcake-content-2 cupcake-content breadQuality-blob">
+            <img src="./images/berry cupcake.png" alt="" class="cupcake-content-img">
+              <h2 class="cupcake-content-h2">Berry<br> Blast Cupcake</h2>
+              <p class="cupcake-content-p">(this is a cupcake with berry flavoured icing and vanilla bread)</p>
+          </div>
+          <div class="cupcake-content-3 cupcake-content breadQuality-blob">
+            <img src="./images/fruit .png" alt="" class="cupcake-content-img">
+              <h2 class="cupcake-content-h2">Fruit <br> Blast Cupcake</h2>
+              <p class="cupcake-content-p">(this is a cupcake with fruit flavoured icing and chocolate bread)</p>
+          </div>
+          <div class="cupcake-content-4 cupcake-content breadQuality-blob">
+            <img src="./images/cookie-muffin.png" alt="" class="cupcake-content-img">
+              <h2 class="cupcake-content-h2">Cookie<br> Muffin</h2>
+              <p class="cupcake-content-p" style="margin-top: 70px;">(this is a cookie flavoured muffin cupcake with chocochips)</p>
+          </div>
+          <div class="cupcake-backgroundSvg" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 271.49,-49.99 500.00,49.99 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #EECDA3;"></path></svg></div>
+        </section>
+  
+  
+        <section class="masonry-gallery">
+          <h1 class="masonry-gallery-h1">Taste our other dishes made with <strong>LOVE</strong></h1>
+  
+          <section class="image-grid">
+            <div class="container">
+                <div class="box box-1">
+                  <img
+                    src="
+                      https://images.unsplash.com/photo-1481391319762-47dff72954d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=401&q=80"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">A sweet tooth’s paradise.</p>
+                </div>
+                <div class="box box-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1567752588693-ad10a647c5a3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJha2VyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Sweet candy you need.</p>
+                </div>
+                <div class="box box-3">
+                  <img
+                    src="https://images.unsplash.com/photo-1488477304112-4944851de03d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Have a bunch full of sweetness</p>
+                </div>
+                <div class="box box-4">
+                  <img
+                    src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGJha2VyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">The taste of love.</p>
+                </div>
+                <div class="box box-5">
+                  <img
+                    src="https://images.unsplash.com/photo-1568254183919-78a4f43a2877?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFrZXJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="bx-p">As sweet as you.</p>
+                </div>
+                <div class="box box-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1533621975016-7c373cdf0a3c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQ4fHxiYWtpbmd8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">A taste from the paradise.</p>
+                </div>
+                <div class="box box-7">
+                  <img
+                    src="https://images.unsplash.com/photo-1573827196605-0a95831e07f9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGJha2VyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Full of joy candy.</p>
+                </div>
+                <div class="box box-8">
+                  <img
+                    src="https://images.unsplash.com/photo-1513156110471-8c6ff38c42c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">If you feel low, visit us</p>
+                </div>
+                <div class="box box-9">
+                  <img
+                    src="https://images.unsplash.com/photo-1534432182912-63863115e106?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">I bet you can't resist</p>
+                </div>
+                <div class="box box-10">
+                  <img
+                    src="https://images.unsplash.com/photo-1569929232526-d9c6578e1531?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">The smile make candy.</p>
+                </div>
+                <div class="box box-11">
+                  <img
+                    src="https://images.unsplash.com/photo-1590080876351-941da357bde6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmFraW5nfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">The reason to smile</p>
+                </div>
+                <div class="box box-12">
+                  <img
+                    src="https://images.unsplash.com/photo-1606058076214-2a5943155d86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Buy, Eat, Enjoy</p>
+                </div>
+                <div class="box box-13">
+                  <img
+                    src="https://images.unsplash.com/photo-1620049302148-61b77ad1a1c2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzh8fHBhc3RyeSUyMGNoZWZ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">The fresh made</p>
+                </div>
+                <div class="box box-14">
+                  <img
+                    src="https://images.unsplash.com/photo-1517401371900-1f56ae9f71e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fHBhc3RyeSUyMGNoZWZ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Welcome to paradise</p>
+                </div>
+                <div class="box box-15">
+                  <img
+                    src="https://images.unsplash.com/photo-1607012664515-9d53c02b8e03?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBhc3RyeSUyMGNoZWZ8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">A perfect happiness maker</p>
+                </div>
+                <div class="box box-16">
+                  <img
+                    src="https://images.unsplash.com/photo-1583394293211-45718f7eb6b0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFzdHJ5JTIwY2hlZnxlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">We are sweet, as sweet as you</p>
+                </div>
+                <div class="box box-17">
+                  <img
+                    src="https://images.unsplash.com/photo-1566698629409-787a68fc5724?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGJha2VyeXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">For the love of chocolate</p>
+                </div>
+                <div class="box box-18">
+                  <img
+                    src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFzdHJ5JTIwY2hlZnxlbnwwfDJ8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">The start of love</p>
+                </div>
+                <div class="box box-19">
+                  <img
+                    src="https://images.unsplash.com/photo-1596548739318-abebab503ae4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fHBhc3RyeXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">All candies are yours</p>
+                </div>
+                <div class="box box-20">
+                  <img
+                    src="https://images.unsplash.com/photo-1541782200893-960a3afe3d2d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHBhc3RyeXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Desire for more candies</p>
+                </div>
+                <div class="box box-21">
+                  <img
+                    src="https://images.unsplash.com/photo-1574883017591-d5735c8a9caa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fHBhc3RyeXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Surprise your teeth</p>
+                </div>
+                <div class="box box-22">
+                  <img
+                    src="https://images.unsplash.com/photo-1574883017591-d5735c8a9caa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODd8fHBhc3RyeXxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Best candies ever made</p>
+                </div>
+                <div class="box box-23">
+                  <img style="padding-top: 10px; padding-bottom: 10px;"
+                    src="https://images.unsplash.com/photo-1580863621684-c99fa617804a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
+                    alt=""
+                    class="box-img"
+                  />
+                  <p class="box-p">Explore the world's best taste</p>
+                </div>
+              </div>
+        </section>
+        </section>
+  
+        <section class="contact">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448181.16374308936!2d76.81306809877472!3d28.647279935227058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1622731918002!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  
+          <div class="contact-box">
+            <h1 class="contact-box-h1">Contact Us</h1>
+            
+            <div class="input-box input-box-1">
+              <label class="input-label" for="">
+                Name <br>
+                <input type="name" onblur="person()" class="input name">
+              </label>
+            </div>
+  
+            
+            <div class="input-box input-box-2">
+              <label class="input-label" for="">
+                Address <br>
+                <input type="address" onblur="Address()" class="input address">
+              </label>
+            </div>
+  
+            <div class="input-box input-box-3">
+              <label class="input-label" for="">
+                Phone no <br>
+                <input type="number" onblur="number()" class="input number">
+              </label>
+            </div>
+  
+            <select name="nameItem" class="nameItem input-select">
+              <option value="0" class="nameItem-option" selected="selected">Select the item</option>
+              <option value="1" class="nameItem-option">Strawberry Choco Cupcake</option>
+              <option value="2" class="nameItem-option">Berry Blast Cupcake</option>
+              <option value="3" class="nameItem-option">Fruit Blast Cupcake</option>
+              <option value="4" class="nameItem-option">Cookie Muffin</option>
+              <option value="5" class="nameItem-option">Macrons
+                (2 flavours-Choco,Basic)</option>
+            </select>
+  
+            <div class="input-box input-box-3">
+              <label class="input-label" for="">
+                Quantity <br>
+                <input type="number" class="input quantity" onblur="Quantity()">
+              </label>
+            </div>
+  
+  
+            <button class="contact-box-btn" onclick="checkAll()">Submit</button>
+  
+  
+          </div>
+  
+  
+          
+        </section>
+
+      </div>
+
+      
+      <footer class="footer">
+    
+        <div class="footer_components">
+            <ul>
+                <a href="https://www.facebook.com/">
+                    <li><img src="icons/fb.png" alt=""></li>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <li><img src="icons/insta.png" alt=""></li>
+                </a>
+                <a href="https://www.twitter.com/">
+                    <li><img src="icons/twitter.png" alt=""></li>
+                </a>
+            </ul>
+            <p>Contact us @ <a style="color: white;" href="https://mail.google.com/mail/u">example34@gmail.com</a></p>
+            <p>Copyright &#169; 2021 Sahil</p>
+        </div>
+    </footer>
+
+    </section>
+  
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    
+    
+    <script src="./Js files/notie.js"></script>
+    <script src="./Js files/app.js"></script>
+
+  </body>
+</html>

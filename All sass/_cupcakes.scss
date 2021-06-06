@@ -1,0 +1,96 @@
+// colors of the website
+$dark-bg: #1d1216;
+$main-dark: #1d1416;
+$main-medium: #5d3f27;
+$main-light: #eecda3;
+$main-light-2: #F6E2CA;
+
+$black: #000;
+$white: #fff;
+
+// Font for the website
+
+$font: "Roboto Mono", monospace;
+
+
+.cupcake{
+    text-align: center;
+    background-color: #EECDA3;
+    font-family: $font;
+    height: 160vh;
+    position: relative;
+    background-image: url(../images/noise.png);
+    transition-delay: 5s;
+
+
+    &-backgroundSvg{
+        position: absolute;
+        overflow: hidden;
+        bottom: -130px;
+        width: 100%;
+    }
+
+    &-h1{
+        color: $main-medium;
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 2px 5px 7px rgba(0,0,0,0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        span{
+            font-size: 50px;
+        }
+    }
+    &-content{
+        background-color: $main-light-2;
+        width: 350px;
+        height: 350px;
+        transition-delay: 5s;
+    
+        &-1{
+            top: 50px;
+            left: 200px;
+        }
+        &-2{
+            top: 55%;
+            left: 200px;
+            animation-delay: 1s;
+        }
+        &-3{
+            top: 130px;
+            right: 200px;
+            animation-delay: 2s;
+        }
+        &-4{
+            top: 65%;
+            right: 220px;
+            animation-delay: 3s;
+        }
+
+        &-img{
+            margin-top: 50px;
+            margin-left: -170px;
+            width: 90px;
+        }
+
+        &-h2{
+            font-size: 20px;
+            width: 50%;
+            margin-left: 140px;
+            margin-top: -60px;
+        }
+
+        &-p{
+            margin-top: 60px;
+            // margin: 30px;
+            width: 70%;
+            margin-left: 50px;
+            font-size: 14px;
+            // margin-right: 30px;
+            color: $black;
+        }
+    
+    }
+}

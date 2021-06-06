@@ -1,0 +1,142 @@
+// colors of the website
+$dark-bg: #1d1216;
+$main-dark: #1d1416;
+$main-medium: #5d3f27;
+$main-light: #eecda3;
+
+
+
+$black: #000;
+$white: #fff;
+
+// Font for the website
+
+$font: "Roboto Mono", monospace;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.contact{
+    height: 150vh;
+    background-color: $main-light;
+}
+
+.map{
+    width: 100%;
+}
+
+.contact-box{
+    position: relative;
+    margin-left: 50%;
+    margin-top: -150px;
+    transform: translateX(-50%);
+    background-color: $main-dark;
+    width: 35%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    height: 42em;
+    border-radius: 10px;
+
+    &-h1{
+        position: absolute;
+        font-family: $font;
+        font-weight: 700;
+        font-size: 28px;
+        left: 50px;
+        top: 30px;
+        color: $main-light;
+    }
+
+    .input{
+      background:$main-dark ;
+      border: 0px;
+      border-bottom: 1px solid $main-light;
+      outline: none;
+      color: $main-light;
+      // padding-top: 100px;
+      // padding: 5px;
+      padding-top: 15px;
+      padding-left: 10px;
+      padding-bottom: 5px;
+      padding-right: 10px;
+      font-size: 19px;
+      width: 53.5%;
+
+      &-box{
+        display: inline-block;
+        width: 100%;
+        margin-left: 130px;
+
+
+        &-1{
+          margin-top: 120px;
+        }
+        &-2{
+          margin-top: 30px;
+        }
+        &-3{
+          margin-top: 30px;
+        }
+
+      }
+
+      &-label{
+        color: $main-light;
+        font-family: $font;
+        font-size: 14.3px;
+      }
+
+      &-select{ 
+        display: inline-block;
+        background-color: $main-dark;
+        width: 53%.5;
+        color: $main-light;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        font-family: $font;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-left: 130px;
+        border: 0px;
+        border-bottom: 1px solid $main-light;
+        option{
+          &:hover{
+            background-color: $main-light;
+            color: $main-dark;
+          }
+        }
+      }
+    }
+
+
+      &-btn {
+        margin-left: 200px;
+        margin-top: 50px;
+        background-color: #fff;
+        border: 2px solid $main-light;
+        padding: 7px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: $main-dark;
+        font-weight: 600;
+        font-family: $font;
+        background-color: $main-light;
+        border-radius: 3px;
+        padding: 10px 30px 10px 30px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        transition: color 200ms, background-color 200ms, border 200ms;
+        &:hover {
+          background-color: #f8dab4;
+          border: 2px solid $main-light;
+          color: $main-dark;
+        }
+        &:active {
+          background-color: #f7f7f7;
+        }
+      }
+
+}

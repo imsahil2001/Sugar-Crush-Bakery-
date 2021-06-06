@@ -1,0 +1,200 @@
+// colors of the website
+
+$main-dark: #1d1216;
+$main-medium: #5d3f27;
+$main-light: #eecda3;
+
+$black: #000;
+$white: #fff;
+
+// Font for the website
+
+$font: "Roboto Mono", monospace;
+
+.header {
+
+  overflow: hidden;
+  position: relative;
+  font-family: $font;
+  height: 130vh;
+  // background-image: url("./images/header-bg.jpg");
+  background-size: cover;
+  background-color: $main-dark;
+  background-position: center;
+
+  &-h1 {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: $white;
+    font-size: 40px;
+    font-weight: 500;
+    
+    &-small {
+      position: absolute;
+      top: 71px;
+      left: 90px;
+      font-size: 20px;
+      font-weight: 500;
+      color: $white;
+      z-index: 2;
+    }
+  }
+
+  &-basketImg {
+    width: 325px;
+    position: absolute;
+    top: 60%;
+    left: -150px;
+  }
+
+  &-ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 75px;
+    right: 10%;
+  }
+
+  &-li {
+    padding-left: 70px;
+
+    a {
+      font-weight: 300;
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  &-svg {
+    &-1 {
+      z-index: 1;
+      position: absolute;
+      left: -110px;
+      top: -100px;
+    }
+    &-2 {
+      z-index: 1;
+      position: absolute;
+      left: 550px;
+      top: -100px;
+    //   visibility: hidden;
+    }
+  }
+
+  &-playBtn {
+      position: absolute;
+      top: 70%;
+      margin-left: 48%;
+      
+    border: 2px solid $main-light;
+    // background-color: #EECDA3;
+    border-radius: 53% 47% 65% 35% / 29% 60% 40% 71% ;
+    height: 70px;
+    animation-fill-mode: backwards;
+    width: 70px;
+    backface-visibility: hidden;
+    z-index: 5;
+    animation: morph 1.5s ease-in-out infinite;
+    transition: transform 300ms ease-in-out,background-color 300ms ease-in-out;
+    cursor: pointer;
+    &-triangle{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &:hover{
+        background-color: $main-light;
+        transform: scale(1.1);
+    }
+  }
+
+  &-ImgBlob{
+    z-index: 9;
+   width: 300px; 
+  //  height: 350px;
+   position: absolute;
+   top: 17em;
+   right: 200px;
+  }
+
+  &-Blob{
+    position: absolute;
+    top: 0em;
+    z-index: 1;
+    right: -35em;
+    width: 1000px;
+    height: 800px;
+    transition: transform 800ms ease-in-out;
+    // &:hover{
+    //   transform: rotateZ(180deg);
+    // }
+  }
+}
+
+
+
+
+
+  @keyframes morph {
+    0% {
+      border-radius: 53% 47% 65% 35% / 29% 60% 40% 71% ;
+      
+    }
+    50% {
+      border-radius: 44% 56% 51% 49% / 43% 49% 51% 57% ;
+      
+    }
+    100% {
+      border-radius: 53% 47% 65% 35% / 29% 60% 40% 71% ;
+      
+
+    }
+  } 
+
+
+  
+
+.popupcard {
+  position: fixed;
+  // display: none;
+  z-index: 1;
+  opacity: 0;
+  visibility: collapse;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 70px;
+  // background-color: rgba(255, 255, 255, 0.267);
+  transition: opacity .2s,visibility .3s,top .33s, z-index .2s;
+  transition-delay: .2s;
+  .icon {
+      z-index: 1500;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      
+  }
+
+ 
+}
+
+.active {
+  z-index: 99;
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+
+
+.change{
+  filter: brightness(10%);
+}
+
+video {
+  user-select: none;
+}

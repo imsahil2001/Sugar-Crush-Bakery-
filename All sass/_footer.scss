@@ -1,0 +1,49 @@
+// colors of the website
+
+$main-dark: #1d1216;
+$main-medium: #5d3f27;
+$main-light: #eecda3;
+
+$black: #000;
+$white: #fff;
+
+// Font for the website
+
+$font: "Roboto Mono", monospace;
+
+
+
+
+
+//FOOTER************************************
+//====================================
+footer {
+    // margin-top: 100px;
+    background-color: $main-dark;
+    height: 20vh;
+    bottom: 0px;
+    padding-top: 50px;
+    .footer_components {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        p {
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1.1px;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            list-style: none;
+            li {
+                padding-right: 20px;
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}

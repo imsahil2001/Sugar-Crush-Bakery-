@@ -1,0 +1,67 @@
+// colors of the website
+$dark-bg: #1d1216;
+$main-dark: #1d1416;
+$main-medium: #5d3f27;
+$main-light: #eecda3;
+
+$black: #000;
+$white: #fff;
+
+// Font for the website
+
+$font: "Roboto Mono", monospace;
+
+
+
+
+.masonry-gallery{
+    background-color: $dark-bg;
+    height: 340vh;
+    padding-top:100px;
+    font-family: $font;
+    &-h1{
+        text-align: center;
+        font-size: 40px;
+        color: $main-light;
+        margin-top: 100px;
+        font-weight: 500;
+    }
+}
+
+
+//the masonry gallery 
+// ==============================================
+.image-grid{
+    height: 300vh;
+    background-color: #1d1416;
+}
+
+.container{
+    padding-top: 100px;
+    width: 1200px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container .box{
+    border-radius: 10px;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 10px;
+    background-color: $main-light;
+    overflow: hidden;
+    break-inside: avoid;
+    text-align: center;
+
+    p{
+        margin: 0;
+        padding:10px;
+        font-size: 16px;
+    }
+}
+
+img{
+    width: 100%;
+}

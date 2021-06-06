@@ -1,0 +1,15 @@
+@import "./All\ sass/header";
+@import "./All\ sass/breadQuality";
+@import "./All\ sass/cupcakes";
+@import "./All\ sass/gallery";
+@import "./All\ sass/contact";
+@import "./All\ sass/notie";
+@import "./All\ sass/footer";
+@import "./All\ sass/loader";
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
